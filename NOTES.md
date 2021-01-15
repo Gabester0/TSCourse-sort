@@ -11,4 +11,4 @@ We start with uncommenting the `rootDir` value and assigning it a value of `./sr
 Then we uncomment the `outDir` value and assign it a value of `./build`. Telling the typescript compiler to put the compiled files in the `build` directory.
 
 Now we can run `tsc` when we want to compile.  
-Or, even better, `tsc --w` to watch all file changes
+Or, even better, `tsc -w` to watch all the files inside the `rootDir` (src) folder. Now the compiler will recompile our code on save.
