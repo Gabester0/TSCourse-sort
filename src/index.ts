@@ -1,5 +1,6 @@
 console.log('Hi there')
 
 const logSomething = () =>{
-    console.log(`Something`)
+    console.log(`123`)
 }
+logSomething()

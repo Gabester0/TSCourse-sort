@@ -12,3 +12,23 @@ Then we uncomment the `outDir` value and assign it a value of `./build`. Telling
 
 Now we can run `tsc` when we want to compile.  
 Or, even better, `tsc -w` to watch all the files inside the `rootDir` (src) folder. Now the compiler will recompile our code on save.
+
+This is good, but now to run the code we need to open a fresh terminal and enter `node build/index.js` every time we want to run our code.
+
+To automate the running of our project we are going to add a package.json by running `npm init -y`.
+
+Now we are going to add nodemon (to rerun the node command we give it every time a file changes inside our project. It will run the compiled code) and concurrently (will help us run multiple scripts at the same time. Specifically we are going to run a script to start up the TS compiler a script to have nodemon run that code). We add these with `npm install nodemon concurrently`
+
+Now to use these we are going to add
+
+```
+    "start:build": "tsc -w",
+    "start:run": "nodemon build/index.js",
+    "start": "concurrently npm:start:*"
+```
+
+We define 2 scripts, `start:build` and `start:run`, and then we tell concurrently to have npm simultaneously run all scripts that begin with `start:` when we run the command `start`.
+
+I couldn't get this to work so I tried:
+`"start": "npm run \"start:build\" & \"start:run\""`
+This works
