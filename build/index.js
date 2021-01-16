@@ -1,6 +1,12 @@
 "use strict";
-console.log('Hi there');
-var logSomething = function () {
-    console.log("123");
-};
-logSomething();
+var Sorter = /** @class */ (function () {
+    function Sorter(collection) {
+        this.collection = collection;
+    }
+    Sorter.prototype.sort = function () {
+    };
+    return Sorter;
+}());
+var sorter = new Sorter([10, 3, -5, 0]);
+sorter.sort();
+console.log(sorter.collection);
