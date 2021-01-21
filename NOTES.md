@@ -48,3 +48,17 @@ Abstract Class:
 --Can contain real implementation for some methods
 --The implemennted methods can refer to other methods that don't actually exist yet (we still have to provide names and types for the not-yet-implemented methods)
 --Can make child classes promise to implement some other method
+
+Intervaces VS Inheritance/Abstract Classes
+
+Interfaces:
+--Sets up a contract between different classes
+--Use when we have very different objects that we want to work to gether
+--Promotes loose Coupling
+Inheritance/Abstract Classes:
+--Sets up a contract between different classes
+--Use when we are trying to build up a definition of an Object
+--Strongly couples classes together
+
+In general we always want to reach for Interfaces first, UNLESS
+we have some different objects that are very closely related in which instance it might be better to think about inheritance and abstract classes.
