@@ -32,3 +32,19 @@ We define 2 scripts, `start:build` and `start:run`, and then we tell concurrentl
 I couldn't get this to work so I tried:
 `"start": "npm run \"start:build\" & \"start:run\""`
 This works
+
+Super call: NumbersCollection.ts
+// The super call calls the constructor function of
+// the parent class. We are extending the parent class
+// (thus relying on inheritance from the parent)
+// so if there is important functionality that has to be
+// instantiated by calling the constructor of the original
+// class we will call super to run the parent classes constructor
+
+Abstract Class:
+
+--Can't be used to create an object directly
+--Only can be used as a parent classs
+--Can contain real implementation for some methods
+--The implemennted methods can refer to other methods that don't actually exist yet (we still have to provide names and types for the not-yet-implemented methods)
+--Can make child classes promise to implement some other method
