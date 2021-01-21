@@ -13,13 +13,13 @@ import { LinkedList } from './LinkedLists';
 // sorter.sort()
 // console.log(charactersCollection.data)
 
-const linkedList = new LinkedList();
-linkedList.add(4502);
-linkedList.add(-345);
-linkedList.add(25);
-linkedList.add(-34);
-linkedList.add(4503);
+// const linkedList = new LinkedList();
+// linkedList.add(4502);
+// linkedList.add(-345);
+// linkedList.add(25);
+// linkedList.add(-34);
+// linkedList.add(4503);
 
-const sorter = new Sorter(linkedList);
-sorter.sort();
-linkedList.print();
+// const sorter = new Sorter(linkedList);
+// sorter.sort();
+// linkedList.print();
